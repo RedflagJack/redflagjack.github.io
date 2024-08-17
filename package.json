@@ -1,9 +1,6 @@
 {
-    "name": "hux-blog",
-    "title": "Hux Blog",
-    "author": "Hux <huxpro@gmail.com>",
-    "version": "1.8.2",
-    "homepage": "http://huxpro.github.io",
+    "name": "MAO",
+    "title": "MAO",
     "repository": {
         "type": "git",
         "url": "https://github.com/Huxpro/huxpro.github.io"

@@ -1,0 +1,12 @@
+---
+layout:     post
+title: 浓雾
+tags:
+  - null
+categories:
+  - 随笔
+date: 2018-11-27 10:29:58
+password:
+---
+
+今日，浓雾淹没了这座城市。

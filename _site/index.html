@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="World of MAO">
+    <meta name="keywords" content="Mao">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="毛毛的小世界 | World of MAO">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="「平凡的世界，平凡的人们，平凡的生活。」">
+    
+    <meta property="og:image" content="http://localhost:4000https://avatars.githubusercontent.com/u/41942449?v=4">
+    <meta property="og:url" content="http://localhost:4000/">
+    <meta property="og:site_name" content="毛毛的小世界 | World of MAO">
+
+    <title>毛毛的小世界 | World of MAO</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://localhost:4000/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href=" /css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href=" /css/hux-blog.min.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+
+    <!-- Google AdSense -->
+    <script data-ad-client="ca-pub-6487568398225121" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">毛毛的小世界</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="huxblog_navbar">
+                <div class="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/">首页</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                            <a href="/about/">关于</a>
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href="/archive/">归档</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="search-icon">
+                            <a href="javascript:void(0)">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <script>
+        // Drop Bootstarp low-performance Navbar
+        // Use customize navbar with high-quality material design animation
+        // in high-perf jank-free CSS3 implementation
+        var $body = document.body;
+        var $toggle = document.querySelector('.navbar-toggle');
+        var $navbar = document.querySelector('#huxblog_navbar');
+        var $collapse = document.querySelector('.navbar-collapse');
+
+        var __HuxNav__ = {
+            close: function () {
+                $navbar.className = " ";
+                // wait until animation end.
+                setTimeout(function () {
+                    // prevent frequently toggle
+                    if ($navbar.className.indexOf('in') < 0) {
+                        $collapse.style.height = "0px"
+                    }
+                }, 400)
+            },
+            open: function () {
+                $collapse.style.height = "auto"
+                $navbar.className += " in";
+            }
+        }
+
+        // Bind Event
+        $toggle.addEventListener('click', function (e) {
+            if ($navbar.className.indexOf('in') > 0) {
+                __HuxNav__.close()
+            } else {
+                __HuxNav__.open()
+            }
+        })
+
+        /**
+         * Since Fastclick is used to delegate 'touchstart' globally
+         * to hack 300ms delay in iOS by performing a fake 'click',
+         * Using 'e.stopPropagation' to stop 'touchstart' event from 
+         * $toggle/$collapse will break global delegation.
+         * 
+         * Instead, we use a 'e.target' filter to prevent handler
+         * added to document close HuxNav.  
+         *
+         * Also, we use 'click' instead of 'touchstart' as compromise
+         */
+        document.addEventListener('click', function (e) {
+            if (e.target == $toggle) return;
+            if (e.target.className == 'icon-bar') return;
+            __HuxNav__.close();
+        })
+    </script>
+    <!-- Search -->
+<div class="search-page">
+  <div class="search-icon-close-container">
+    <span class="search-icon-close">
+      <i class="fa fa-chevron-down"></i>
+    </span>
+  </div>
+  <div class="search-main container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <form></form>
+        <input type="text" id="search-input" placeholder="$ grep...">
+        </form>
+        <div id="search-results" class="mini-post-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Page Header -->
+
+
+
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/home-bg.jpg');
+        background: ;
+    }
+
+    
+</style>
+
+
+
+
+
+
+
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+  <div class="header-mask"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="site-heading">
+        
+          <h1>毛毛的小世界</h1>
+          <span class="subheading">「平凡的世界，平凡的人们，平凡的生活。」</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    
+
+    <!-- USE SIDEBAR -->
+    <!-- PostList Container -->
+    <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12
+      col-xs-12 postlist-container">
+      
+<div class="post-preview">
+    <a href="/%E9%9A%8F%E7%AC%94/2024/01/25/%E6%97%A7%E6%96%87%E6%96%B0%E5%8F%91-%E5%AD%A4%E7%8B%AC%E7%9A%84%E8%A1%8C%E8%80%85-%E5%AD%A4%E7%8B%AC%E7%9A%84%E4%B8%96%E7%95%8C2024-01-23/">
+        <h2 class="post-title">
+            2024-01-23旧文新发：孤独的行者，孤独的世界
+        </h2>
+        
+        <div class="post-content-preview">
+            
+                无意间打开自己的网易号，上面还发表着一篇文章，日期写着2017-02-28 16:40:48。回想那个时候在做什么，在想什么，已然了无思绪。看着这些文字，内心有一种陌生的熟悉感。分享给我家刷儿看了看，然后决定将其转到博客上。
+
+正文：
+
+
+
+我们都是世间孤独的行者，一个人来到世间，也必将一个人离开他所生活的世间。
+
+有时候，闭上眼睛冥思，想到黑夜的星星，想到浩瀚的银河宇宙，会突然变得恐惧起来...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 毛毛的小世界 on January 25, 2024
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/%E9%9A%8F%E7%AC%94/2024/01/25/%E6%88%91%E7%9A%84%E4%BF%A9%E4%B8%AA%E6%A2%A62023-05-09/">
+        <h2 class="post-title">
+            2023-05-09我的俩个梦
+        </h2>
+        
+        <div class="post-content-preview">
+            
+                我在
+
+
+
+第一个梦里
+
+看到了我妈
+
+如此清晰
+
+相视无言
+
+醒来甚是不甘
+
+于是
+
+便又懵懵睡去
+
+第二个梦
+
+看到了我爸和我哥
+
+吃着饼干
+
+拿出一支烟
+
+烟把儿断了
+
+醒了
+
+。。。
+
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 毛毛的小世界 on January 25, 2024
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/%E9%9A%8F%E7%AC%94/2022/10/29/2022%E5%B9%B410%E6%9C%8828%E6%97%A5/">
+        <h2 class="post-title">
+            2022年10月28日
+        </h2>
+        
+        <div class="post-content-preview">
+            
+                今日深夜，打开B站，本意并非emo，却勾起梦的回忆，梦醒时分，总希望时间能定格某一时刻，在意识模糊状态，一时竟分不清身处现实，抑或是梦境。一如庄周梦蝶，又或是蝶梦庄周。
+
+
+
+梦的真实美好，往往源于现实的虚假痛苦。现实中得不到的，失去的，悔恨的，在梦境中，总能以某种形式出现，满足人的臆念。
+
+回想过去的幕幕经历，总是在失去后才后悔不已。现实中，却在后悔中失去目前依旧拥有、未来即将不再拥有的。...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 毛毛的小世界 on October 29, 2022
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/%E9%9A%8F%E7%AC%94/2022/08/03/%E6%97%A5%E8%AE%B020220802/">
+        <h2 class="post-title">
+            日记20220802
+        </h2>
+        
+        <div class="post-content-preview">
+            
+                不知不觉，竟已八月有余。
+
+距离2019年，三年的时间，硕士毕业了。
+
+没有工作，选择了继续读博士。
+
+毕业给我最大的感受是，毕业比没毕业的时候还要忙。
+
+考博真是个漫长的，煎熬的，痛苦的过程。
+
+考上了也只有一瞬的高兴。
+
+回到家，刚好我哥回来了，我嫂带着俩小孩也回来了。
+
+我哥一走，我嫂也走了，家里只有我一个了。
+
+这短短的几个月，经历了很多事，记性不好，也懒得去想了。
+
+现在忙着写论文...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 毛毛的小世界 on August 3, 2022
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2021/12/20/%E6%AF%8D%E4%BA%B2%E4%B8%89%E5%91%A8%E5%B9%B4%E7%A5%AD/">
+        <h2 class="post-title">
+            母亲三周年祭
+        </h2>
+        
+        <div class="post-content-preview">
+            
+                三年了，母亲去世三年了。时光消逝竟如此快，明日便是三周年。
+
+
+
+当今天写了500字的毕业论文，便不想继续写下去了。想到明日是母亲的三周年祭日，唉。。。
+
+近半个月，时常梦到我的母亲，梦到以前的旧房子。梦到的时候，总是醒来便记不清梦的内容，加上没有及时记录下来，便消散得只留下大概的轮廓，只记得母亲出现在了我的梦里，而我还是没意识到，母亲去世三年了。在我的梦里，母亲依旧鲜活。
+
+2022/2/...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 毛毛的小世界 on December 20, 2021
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/%E9%9A%8F%E7%AC%94/2021/12/05/%E4%B8%80%E4%B8%AA%E6%A2%A6/">
+        <h2 class="post-title">
+            一个梦
+        </h2>
+        
+        <div class="post-content-preview">
+            
+                还有一个月的时间，母亲去世就三年了，三年了。
+
+
+
+今天在听完学术报告，已经下午三点，于是便睡了一觉，醒来，晚上七点半。瞬时一种孤独感油然而生，再无睡意。然而梦中，母亲出现了。趁着梦的记忆还有一丝留存，便记录下来。
+
+梦里，回到了小时候的房子，布局真和当时一模一样，只是多了一张床。母亲做了饭，在喊我父亲吃饭，我在沙发上开着电脑，在设置电脑的文件夹颜色，不知道我在干什么。父亲躺在床上，不想吃，...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 毛毛的小世界 on December 5, 2021
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/%E9%98%85%E8%AF%BB/2021/11/25/%E7%A7%91%E7%A0%94%E6%97%A5%E8%AE%B011-24/">
+        <h2 class="post-title">
+            科研日记11.24-11.27
+        </h2>
+        
+        <div class="post-content-preview">
+            
+                王亚杰：工程博士中心的定位，其中有资助机制的内容。
+
+第三，授予的资金金额支持该队列的40名博士研究人员的学生成本，要求剩余20%的学生成本由其他(非ukri)来源杠杆化，从而鼓励高等教育部门以外的相关合作伙伴的投入和参与。
+
+
+
+获得该奖学金的博士生由学术机构与产业导师联合指导，并在联合培养企业进行为期３个月以上的合作研究，不同学科的培养项目由各个专门研究理事会负责协调与管理。参与该计划的...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 毛毛的小世界 on November 25, 2021
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/%E5%88%9B%E6%83%B3idea/2021/11/24/%E7%A7%91%E7%A0%94Idea-%E4%B8%80/">
+        <h2 class="post-title">
+            科研Idea（一）
+        </h2>
+        
+        <div class="post-content-preview">
+            
+                开个小帖子，更新自己在科研、或者说写论文中的一些想法，点子。（不一定有意义，但可能比较有趣）
+
+2021年11月24日
+
+
+  农家子弟如何考上博士？
+  英国大学生资助政策的演变？
+  
+
+
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 毛毛的小世界 on November 24, 2021
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2021/11/24/%E7%A7%91%E7%A0%94%E6%97%A5%E8%AE%B011-23/">
+        <h2 class="post-title">
+            科研日记11-23
+        </h2>
+        
+        <div class="post-content-preview">
+            
+                （2013年Call for CDTs；EngDReviewReport2007 (2021-10-27 23-53-34)）
+
+2013 年 CDT 练习
+
+(https://webarchive.nationalarchives.gov.uk/ukgwa/20210701142100/https://epsrc.ukri.org/skills/students/centres/2013-...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 毛毛的小世界 on November 24, 2021
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/%E9%9A%8F%E7%AC%94/2021/11/23/11-22%E7%A7%91%E7%A0%94%E6%97%A5%E8%AE%B0/">
+        <h2 class="post-title">
+            11.22科研日记
+        </h2>
+        
+        <div class="post-content-preview">
+            
+                昨日晚上得知今天要帮陈老师搞一个文件证明，因而今日，决定九点起床，起床后，洗过脸便奔向行政楼，到地方之后，说是需要写一份委托书，我便回到办公室，将委托书打印出来，返回。终于搞定。
+
+一上午过去，毕业论文写了很少的字数。仅百来字。唉。。。
+
+下午，需要提前去杨老师办公室门口等她，因为要让杨老师帮忙写推荐信，得带点诚意，便及早早的到了地方。很顺利，完成。
+
+回到办公室，将考博的材料整了一整，便下...
+            
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by 毛毛的小世界 on November 23, 2021
+    </p>
+</div>
+<hr>
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    
+    <li class="next">
+        <a href="/page2">后一页 &rarr;</a>
+    </li>
+    
+</ul>
+
+
+    </div>
+    <!-- Sidebar Container -->
+    <div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-12
+      col-xs-12 sidebar-container">
+      <!-- Featured Tags -->
+      
+
+
+<section>
+    
+    <h5><a href="/archive/">标签</a></h5>
+    <div class="tags">
+        
+        
+        
+        
+        
+        
+                <a data-sort="0059" 
+                    href="/archive/?tag=%E8%80%83%E7%A0%94"
+                    title="考研"
+                    rel="2">考研</a>
+        
+                <a data-sort="0052" 
+                    href="/archive/?tag=%E6%80%9D%E5%BF%B5"
+                    title="思念"
+                    rel="9">思念</a>
+        
+                <a data-sort="0059" 
+                    href="/archive/?tag=%E4%BA%BA%E7%94%9F"
+                    title="人生"
+                    rel="2">人生</a>
+        
+                <a data-sort="0059" 
+                    href="/archive/?tag=%E5%8F%8D%E6%80%9D"
+                    title="反思"
+                    rel="2">反思</a>
+        
+                <a data-sort="0059" 
+                    href="/archive/?tag=%E6%AF%8D%E4%BA%B2"
+                    title="母亲"
+                    rel="2">母亲</a>
+        
+                <a data-sort="0059" 
+                    href="/archive/?tag=%E7%A7%91%E7%A0%94"
+                    title="科研"
+                    rel="2">科研</a>
+    </div>
+</section>
+
+
+      <!-- Short About -->
+      <section class="visible-md visible-lg">
+  <hr>
+  <h5><a href="/about/">关于</a></h5>
+  <div class="short-about">
+    
+    <img src="https://avatars.githubusercontent.com/u/41942449?v=4" />
+    
+    
+    <p>对生活保持热爱</p>
+    
+    <!-- SNS Link -->
+    
+
+
+<ul class="list-inline">
+
+
+  
+  
+  
+  
+  
+  
+  
+</ul>
+  </div>
+</section>
+
+      <!-- Friends Blog -->
+      
+
+      <!-- Ads -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- first shot -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6487568398225121" data-ad-slot="4814308751"
+     data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- SNS Link -->
+                
+
+
+<ul class="list-inline text-center">
+
+
+  
+  
+  
+  
+  
+  
+  
+</ul>
+
+                <p class="copyright text-muted">
+                    Copyright &copy; 毛毛的小世界 2024
+                    <br>
+                    Powered by LIWEIMAO
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+<!-- Simple Jekyll Search -->
+<script src="/js/simple-jekyll-search.min.js"></script>
+
+<!-- Service Worker -->
+
+<script src="/js/snackbar.js "></script>
+<script src="/js/sw-registration.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+        var d = document, t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+        s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+
+
+
+
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function () {
+        var $nav = document.querySelector("nav");
+        if ($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        // interop with multilangual 
+        if ('' == 'true') {
+            _containerSelector = 'div.post-container.active'
+        } else {
+            _containerSelector = 'div.post-container'
+        }
+
+        // init
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        // clean
+        $(selector).html('')
+
+        // appending
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+<!-- Multi-Lingual -->
+
+
+<!-- Simple Jekyll Search -->
+<script>
+    // https://stackoverflow.com/questions/1912501/unescape-html-entities-in-javascript
+    function htmlDecode(input) {
+        var e = document.createElement('textarea');
+        e.innerHTML = input;
+        // handle case of empty input
+        return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+    }
+
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('search-results'),
+        json: '/search.json',
+        searchResultTemplate: '<div class="post-preview item"><a href="{url}"><h2 class="post-title">{title}</h2><h3 class="post-subtitle">{subtitle}</h3><hr></a></div>',
+        noResultsText: 'No results',
+        limit: 50,
+        fuzzy: false,
+        // a hack to get escaped subtitle unescaped. for some reason, 
+        // post.subtitle w/o escape filter nuke entire search.
+        templateMiddleware: function (prop, value, template) {
+            if (prop === 'subtitle' || prop === 'title') {
+                if (value.indexOf("code")) {
+                    return htmlDecode(value);
+                } else {
+                    return value;
+                }
+            }
+        }
+    });
+
+    $(document).ready(function () {
+        var $searchPage = $('.search-page');
+        var $searchOpen = $('.search-icon');
+        var $searchClose = $('.search-icon-close');
+        var $searchInput = $('#search-input');
+        var $body = $('body');
+
+        $searchOpen.on('click', function (e) {
+            e.preventDefault();
+            $searchPage.toggleClass('search-active');
+            var prevClasses = $body.attr('class') || '';
+            setTimeout(function () {
+                $body.addClass('no-scroll');
+            }, 400)
+
+            if ($searchPage.hasClass('search-active')) {
+                $searchClose.on('click', function (e) {
+                    e.preventDefault();
+                    $searchPage.removeClass('search-active');
+                    $body.attr('class', prevClasses);  // from closure 
+                });
+                $searchInput.focus();
+            }
+        });
+    });
+</script>
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
