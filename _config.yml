@@ -74,7 +74,7 @@ netease_comment: false
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
 sidebar-about-description: "对生活保持热爱"
-sidebar-avatar: "https://avatars.githubusercontent.com/u/41942449?v=4" # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: "https://himg.bdimg.com/sys/portrait/item/pp.1.48e71507.n8r79tAmO94gLrYgkOtIzg.jpg?tt=1723987278682" # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true # whether or not using Feature-Tags

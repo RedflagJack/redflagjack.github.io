@@ -3,8 +3,7 @@ layout:     post
 title: 科研日记11.24-11.27
 tags:
   - 科研
-categories:
-  - 阅读
+catalog: true
 date: 2021-11-24 19:24:57
 password:
 ---

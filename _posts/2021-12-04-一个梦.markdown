@@ -4,9 +4,7 @@ title: 一个梦
 tags:
   - 思念
   - 三年
-categories:
-  - 随笔
-visible: hide
+catalog: true
 date: 2021-12-04 19:31:51
 password:
 ---

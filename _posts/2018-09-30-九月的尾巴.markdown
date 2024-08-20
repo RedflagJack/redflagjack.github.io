@@ -3,8 +3,6 @@ layout:     post
 title: 九月的尾巴
 tags:
   - 
-categories:
-  - 随笔
 date: 2018-09-30 21:21:07
 password:
 ---

@@ -3,8 +3,6 @@ layout:     post
 title: 以后的生活
 tags:
   - null
-categories:
-  - 创想idea
 date: 2018-10-14 09:14:06
 password:
 ---

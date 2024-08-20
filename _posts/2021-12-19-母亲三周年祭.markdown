@@ -3,11 +3,8 @@ layout:     post
 title: 母亲三周年祭
 tags:
   - 思念
-categories:
-  - null
+catalog: true
 date: 2021-12-19 22:39:50
-visible: hide
-password:
 ---
 
 三年了，母亲去世三年了。时光消逝竟如此快，明日便是三周年。

@@ -3,8 +3,7 @@ layout:     post
 title: 科研日记11-23
 tags:
   - null
-categories:
-  - null
+catalog: true
 date: 2021-11-24 00:48:20
 password:
 ---

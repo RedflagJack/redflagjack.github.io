@@ -4,8 +4,7 @@ title: 小雪节气前夕
 tags:
   - 冬天
   - 反思
-categories:
-  - 随笔
+catalog: true
 date: 2021-11-21 22:35:40
 password:
 ---

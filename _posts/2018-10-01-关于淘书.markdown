@@ -3,8 +3,6 @@ layout:     post
 title: 关于淘书
 tags:
   - null
-categories:
-  - 阅读
 date: 2018-10-01 22:34:43
 password:
 ---

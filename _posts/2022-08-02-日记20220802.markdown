@@ -3,8 +3,7 @@ layout:     post
 title: 日记20220802
 tags:
   - null
-categories:
-  - 随笔
+catalog: true
 date: 2022-08-02 19:34:19
 password:
 ---

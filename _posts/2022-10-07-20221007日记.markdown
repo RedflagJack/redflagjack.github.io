@@ -1,0 +1,16 @@
+---
+layout:     post
+title:      "20221007日记"
+subtitle:   "日常日记"
+header-style: text
+date:       2022-10-07 23:34:00
+author:     "Mao"
+catalog: true
+tags:
+    - 忙碌
+    - 读博
+---
+
+忙碌的读博日子，已过去一月有余。
+
+接下来，还将继续忙碌。

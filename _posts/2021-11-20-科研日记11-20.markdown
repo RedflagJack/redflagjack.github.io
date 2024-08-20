@@ -3,8 +3,7 @@ layout:     post
 title: 科研日记11.20
 tags:
   - 毕业论文
-categories:
-  - null
+catalog: true
 date: 2021-11-20 18:06:51
 password:
 ---
