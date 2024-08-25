@@ -16,14 +16,14 @@ description: "「平凡的世界，平凡的人们，平凡的生活。」"
         {% endif %}
         <div class="post-content-preview">
             {% if post.lang == 'en' %}
-                {{ post.content | strip_html | truncate:300 }}
+                {{ post.content | strip_html | truncate:98 | replace: '&', '&amp;' }}
             {% else %}
-                {{ post.content | strip_html | truncate:200 }}
+                {{ post.content | strip_html | truncate:98 | replace: '&', '&amp;' }}
             {% endif %}
         </div>
     </a>
     <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+        写于{{ post.date | date: "%Y年%-m月%-d日" }}
     </p>
 </div>
 <hr>

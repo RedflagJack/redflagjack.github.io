@@ -58,10 +58,10 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: 
+# disqus_username: 
 
 # Netease settings
-netease_comment: false
+# netease_comment: false
 
 # Analytics settings
 # Baidu Analytics
@@ -86,6 +86,8 @@ service-worker: true
 
 # MathJax rendering for layout:page (e.g. post preview)
 page-mathjax: false
+
+
 
 
 
