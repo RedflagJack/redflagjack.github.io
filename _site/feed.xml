@@ -5,9 +5,37 @@
     <description>World of MAO</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 25 Aug 2024 21:31:16 +0800</pubDate>
-    <lastBuildDate>Sun, 25 Aug 2024 21:31:16 +0800</lastBuildDate>
+    <pubDate>Fri, 20 Sep 2024 18:22:10 +0800</pubDate>
+    <lastBuildDate>Fri, 20 Sep 2024 18:22:10 +0800</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>2024年9月20日，一日入秋</title>
+        <description>&lt;p&gt;今日，2024年9月20日，星期五。&lt;/p&gt;
+
+&lt;p&gt;今日，农历八月十八，中秋节后的第三天，月饼还没吃完。&lt;/p&gt;
+
+&lt;p&gt;今日，与昨日大不相同，不仅指气温、天气，也指心情和心境。&lt;/p&gt;
+
+&lt;p&gt;今日，秋雨淅淅沥沥、下个不停；昨日，出门即遇秋阳，晒和热。&lt;/p&gt;
+
+&lt;p&gt;今日，身上的衣服厚实，仍觉单薄；昨日，薄薄一件，还是很热。&lt;/p&gt;
+
+&lt;p&gt;今日，早早起来，去市里参会，瞄准茶歇、时不时打盹；昨日，咋叫都不起，昏昏沉沉过一天。&lt;/p&gt;
+
+&lt;p&gt;今日，论文还没写，即将开始写；昨日，一字未动，最终也是没动。&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 21 Sep 2024 01:42:18 +0800</pubDate>
+        <link>http://localhost:4000/2024/09/21/%E4%B8%80%E6%97%A5%E5%85%A5%E7%A7%8B-2024%E5%B9%B49%E6%9C%8820%E6%97%A5/</link>
+        <guid isPermaLink="true">http://localhost:4000/2024/09/21/%E4%B8%80%E6%97%A5%E5%85%A5%E7%A7%8B-2024%E5%B9%B49%E6%9C%8820%E6%97%A5/</guid>
+        
+        <category>日常</category>
+        
+        <category>秋天</category>
+        
+        
+      </item>
     
       <item>
         <title>2024年8月19日的一天</title>
@@ -90,8 +118,6 @@
       <item>
         <title>2023-05-09我的俩个梦</title>
         <description>&lt;p&gt;我在&lt;/p&gt;
-
-&lt;!--more--&gt;
 
 &lt;p&gt;第一个梦里&lt;/p&gt;
 
@@ -255,27 +281,6 @@
         <guid isPermaLink="true">http://localhost:4000/2021/12/20/%E6%AF%8D%E4%BA%B2%E4%B8%89%E5%91%A8%E5%B9%B4%E7%A5%AD/</guid>
         
         <category>思念</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>一个梦</title>
-        <description>&lt;p&gt;还有一个月的时间，母亲去世就三年了，三年了。&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;今天在听完学术报告，已经下午三点，于是便睡了一觉，醒来，晚上七点半。瞬时一种孤独感油然而生，再无睡意。然而梦中，母亲出现了。趁着梦的记忆还有一丝留存，便记录下来。&lt;/p&gt;
-
-&lt;p&gt;梦里，回到了小时候的房子，布局真和当时一模一样，只是多了一张床。母亲做了饭，在喊我父亲吃饭，我在沙发上开着电脑，在设置电脑的文件夹颜色，不知道我在干什么。父亲躺在床上，不想吃，叫了几次之后，母亲便一人吃了起来。我不知为何将电脑放在了地上，这时父亲走过来，说你的电脑为啥在地上放着，然后我就将电脑放到了里屋的床上，没有一丝意识到这是在梦里。等醒了之后，孤独感让人窒息，猛然想到母亲去世快三年了，按农历是哪一天呢。打开日历，翻了翻，还有一个月，一个月。&lt;/p&gt;
-</description>
-        <pubDate>Sun, 05 Dec 2021 03:31:51 +0800</pubDate>
-        <link>http://localhost:4000/2021/12/05/%E4%B8%80%E4%B8%AA%E6%A2%A6/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021/12/05/%E4%B8%80%E4%B8%AA%E6%A2%A6/</guid>
-        
-        <category>思念</category>
-        
-        <category>三年</category>
         
         
       </item>
