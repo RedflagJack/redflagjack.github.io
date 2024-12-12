@@ -5,9 +5,35 @@
     <description>World of MAO</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 17 Nov 2024 16:50:19 +0800</pubDate>
-    <lastBuildDate>Sun, 17 Nov 2024 16:50:19 +0800</lastBuildDate>
+    <pubDate>Thu, 12 Dec 2024 14:44:09 +0800</pubDate>
+    <lastBuildDate>Thu, 12 Dec 2024 14:44:09 +0800</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>今天是个阴天</title>
+        <description>&lt;p&gt;今天醒来，已是十点多钟。灰蒙蒙的天，见不到一丝阳光。&lt;/p&gt;
+
+&lt;p&gt;近些天，都是睡得晚，起得晚。看到阴天，不免心中庆幸，是个睡懒觉的好天气。&lt;/p&gt;
+
+&lt;p&gt;近来也无紧要事，便松松垮垮，庸庸懒懒度日。&lt;/p&gt;
+
+&lt;p&gt;中午和刷儿吃完午饭，便来了自习室。&lt;/p&gt;
+
+&lt;p&gt;刷起了抖音。看到一个电视剧的解说，一听到人物的名字，便知道是由路遥的小说《人生》改编的电视剧。&lt;/p&gt;
+
+&lt;p&gt;看完，觉得这部电视剧超出了小说的范围，越到后面越扯，弱化了小说所要表达的思想、以及小说在心灵和情感上产生的震撼。人生是高加林的人生，或者说以高加林的人生为主线，到高加林经历人生沉浮后回到农村，看到巧珍嫁人后的悔恨，才明白人生和生活的意义，就可以结束了。这样才会给人一种强烈的代入感，人生的不顺，生活的失意，到看透、看开这一切，都是命运使然。&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 12 Dec 2024 22:38:40 +0800</pubDate>
+        <link>http://localhost:4000/2024/12/12/%E4%BB%8A%E5%A4%A9%E6%98%AF%E4%B8%AA%E9%98%B4%E5%A4%A9/</link>
+        <guid isPermaLink="true">http://localhost:4000/2024/12/12/%E4%BB%8A%E5%A4%A9%E6%98%AF%E4%B8%AA%E9%98%B4%E5%A4%A9/</guid>
+        
+        <category>日常</category>
+        
+        <category>阴天</category>
+        
+        
+      </item>
     
       <item>
         <title>冬日的一个下午</title>
@@ -271,39 +297,6 @@
         <category>忙碌</category>
         
         <category>读博</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>日记20220802</title>
-        <description>&lt;p&gt;不知不觉，竟已八月有余。&lt;/p&gt;
-
-&lt;p&gt;距离2019年，三年的时间，硕士毕业了。&lt;/p&gt;
-
-&lt;p&gt;没有工作，选择了继续读博士。&lt;/p&gt;
-
-&lt;p&gt;毕业给我最大的感受是，毕业比没毕业的时候还要忙。&lt;/p&gt;
-
-&lt;p&gt;考博真是个漫长的，煎熬的，痛苦的过程。&lt;/p&gt;
-
-&lt;p&gt;考上了也只有一瞬的高兴。&lt;/p&gt;
-
-&lt;p&gt;回到家，刚好我哥回来了，我嫂带着俩小孩也回来了。&lt;/p&gt;
-
-&lt;p&gt;我哥一走，我嫂也走了，家里只有我一个了。&lt;/p&gt;
-
-&lt;p&gt;这短短的几个月，经历了很多事，记性不好，也懒得去想了。&lt;/p&gt;
-
-&lt;p&gt;现在忙着写论文，写书稿，不亦乐乎。&lt;/p&gt;
-
-&lt;p&gt;内心失落落的。&lt;/p&gt;
-
-&lt;p&gt;就这样吧。&lt;/p&gt;
-</description>
-        <pubDate>Wed, 03 Aug 2022 03:34:19 +0800</pubDate>
-        <link>http://localhost:4000/2022/08/03/%E6%97%A5%E8%AE%B020220802/</link>
-        <guid isPermaLink="true">http://localhost:4000/2022/08/03/%E6%97%A5%E8%AE%B020220802/</guid>
         
         
       </item>
